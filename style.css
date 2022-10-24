@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #343a40;
+  font-size: 24px;
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+}
+nav,
+section,
+main,
+aside {
+  padding-top: 24px;
+}
+nav {
+  background-color: #868e96;
+  color: #fff;
+  grid-row: 1 / -1;
+}
+menu {
+  background-color: #91a7ff;
+  grid-column: 2 / -1;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+
+button {
+  display: inline-block;
+  padding: 8px 12px;
+  border: none;
+  background-color: #5c7cfa;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+button:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
+}
+button:hover {
+  background-color: #5f3dc4;
+}
+
+button:last-child:hover {
+  background-color: #a61e4d;
+}
+section {
+  grid-column: 2/3;
+  background-color: #dbe4ff;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  gap: 12px;
+  padding: 40px;
+  height: 100%;
+}
+.email {
+  background-color: #5c7cfa;
+  height: 96px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+}
+main {
+  background-color: #edf2ff;
+  color: #364fc7;
+}
+aside {
+  background-color: #dbe4ff;
+  color: #364fc7;
+}
